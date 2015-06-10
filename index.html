@@ -1,0 +1,11 @@
+<!-- Include SystemJS -->
+<script src="node_modules/systemjs/dist/system.js"></script>
+<!-- Include system-npmlocator. This monkeypatches the SystemJS loader
+     so that npm-installed packages should "just work". -->
+<script src="node_modules/system-npmlocator/npmlocator.js"></script>
+<script>
+// Load our main script with the SystemJS loader. NPM modules can be
+// now used in these just as you'd do with node or browserify. Check
+// out the main.js file
+System.import("./main.js");
+</script>
